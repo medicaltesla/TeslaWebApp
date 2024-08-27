@@ -1,0 +1,141 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'Kanit', sans-serif;
+}
+/* width */
+::-webkit-scrollbar {
+    width: 6px;
+}
+ 
+/* Track */
+::-webkit-scrollbar-track {
+    background: #8A241F;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #0b3a6a;
+    border-radius: 5px;
+}
+ 
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #d68656;
+}
+
+.hcard {
+    height: 100%;
+}
+  
+.container {
+  max-width: 1366px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.testimonialContainer {
+  padding: 4px;
+  background-color: white;
+  width: 300px;
+  height: 450px;
+  border-radius: 20px;
+  box-shadow: 0 0 15px -6px black;
+  margin: 10px;
+  overflow-y: auto;
+}
+
+.testimonialHeader {
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.imageContainer {
+  background-size: cover;
+  border-radius: 50%;
+  background-color: grey;
+}
+
+.testimonialBody {
+  text-align: justify;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.iconContainer {
+  width: 30px;
+  justify-self: end;
+  margin-left: auto;
+}
+
+.icon {
+    fill: rgb(25, 118, 210);
+}
+
+.nameContainer {
+  margin-left: 10px;
+  text-align: left;
+}
+
+.testimonialBodyText {
+  font-size: 1rem;
+}
+
+.testimonialListContainer {
+  max-height: 400px; /* Set the maximum height for the container */
+  overflow-y: auto; /* Enable vertical scrolling */
+}
+
+/* Style the scrollbar */
+.testimonialListContainer::-webkit-scrollbar {
+  width: 4px;
+}
+
+.testimonialListContainer::-webkit-scrollbar-thumb {
+  background-color: #32f1a8; /* Color of the thumb */
+  border-radius: 6px;
+}
+
+.testimonialListContainer::-webkit-scrollbar-track {
+  background-color: #6ad6bb; /* Color of the track */
+  border-radius: 6px;
+}
+
+.imgShape{
+    border-radius: 20%;
+    height: auto;;
+    width: 100px;
+    padding: 5px;
+    background-color: #ff5d00;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 40px; /* Adjust the height as needed */
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1)); /* Adjust the gradient as needed */
+  }
+
+.overflow-hidden:hover .overlay {
+    height: 12; /* Slide up on hover */
+}
+
+.responsiveImg {
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+  
+  /* Media query for screens with a minimum width of 1201px */
+
+  

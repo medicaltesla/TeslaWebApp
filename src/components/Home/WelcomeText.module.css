@@ -1,0 +1,12 @@
+.welcomeButton {
+    transition: all 0.5s ease-in-out;
+    
+}
+
+.welcomeButton:hover{
+    transform: translateY(-18px);
+}
+
+.no-gap {
+    margin-bottom: 0;
+  }

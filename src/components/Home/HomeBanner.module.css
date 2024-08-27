@@ -1,0 +1,12 @@
+
+.curvedDiv {
+  background-color: #3498db; /* Your desired background color */
+  height: 300px; /* Adjust the height as needed */
+  border-radius: 0 0 50% 50%; /* Curved bottom */
+  width: 100%; /* Adjust width as needed */
+}
+
+.responsiveImg {
+    max-width: 100%;
+    height: auto;
+  }

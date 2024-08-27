@@ -1,0 +1,17 @@
+/* Loader.css */
+
+.stethoscope-icon {
+  font-size: 3rem; /* Adjust the size of the icon */
+  color: #6c1713; /* Adjust the color to match your theme */
+  animation: pulse 1s infinite; /* Add a custom pulse animation */
+}
+
+/* Optional: Add custom animation */
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+}

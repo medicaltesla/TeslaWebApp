@@ -1,0 +1,57 @@
+/* HomeSlider.css */
+.slider {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    margin: auto;
+    background-color: #d68656;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+    padding: 10px;
+}
+
+.slideName {
+    font-size: 20px;
+    color: #ffffff;
+    padding: 4px;
+    text-align: center;
+    width: 100%;
+    transition: opacity 0.5s ease-in-out;
+    font-weight: 200;
+}
+
+.slideText {
+    font-size: 18px;
+    color: #ffffff;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+    transition: opacity 0.5s ease-in-out;
+    font-family: cursive;
+    font-style: italic;
+    font-weight: 100;
+  
+}
+
+
+@media (min-width: 768px) {
+    .slider {
+        flex-direction: row;
+        height: 100%;
+    }
+    .slider-button {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    .slider-button:first-of-type {
+        left: 10px;
+    }
+    .slider-button:last-of-type {
+        right: 10px;
+    }
+}

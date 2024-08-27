@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "incremental": true,
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+    "paths": {
+      "@/*": ["./src/*"]
+    }
+  },
+  "include": ["next-env.d.ts", "src/**/*.ts", "src/**/*.tsx", ".next/types/**/*.ts", "src/app/news/want-to-pursue-your-education-overseas-rising-indian-student-destinations-in-2024", "next.config.mjs","scripts/**/*.ts","utils/**/*.ts", "src/components/Footer/WhatsApp.jsx", "src/app/about/page.jsx", "src/app/contact/page.jsx", "src/app/layout.jsx", "src/app/not-found.jsx", "src/app/page.jsx", "src/components/About/AboutBanner.jsx", "src/components/About/AboutBody.jsx", "src/components/FAQ/FAQ_Heading.jsx", "src/components/FAQ/FAQ_Prop.jsx"],
+  "exclude": ["node_modules"]
+}
