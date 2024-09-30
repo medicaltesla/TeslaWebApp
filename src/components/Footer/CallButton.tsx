@@ -1,6 +1,8 @@
 "use client"
 import React,{useState, useEffect} from 'react';
-import { IoCallOutline } from "react-icons/io5";
+import { FaPhoneVolume } from "react-icons/fa6";
+import styles from "./footer.module.css"
+
 
 const PhoneNumber = '+91 9175014994'; // Replace with your phone number
 
@@ -31,25 +33,18 @@ const CallButton = () => {
     }, []);
 
     return (
-        <>{isMobileView &&
-            <div style={{
-                position: 'fixed',
-                bottom: '90px',
-                right: '20px',
-                zIndex: '1000',
-                backgroundColor: '#ffffff',
-                borderRadius: '50%',
-                width: '45px',
-                height: '45px',
-                display: 'flex',
-                justifyContent: 'center',
-                alignItems: 'center',
-                boxShadow: '0 2px 10px rgba(0,0,0,0.3)',
-                cursor: 'pointer', 
-            }}>
-                <IoCallOutline onClick={handleClick} style={{ fontSize: '2rem', color: '#0b3a6a', }} />
-            </div>
-        }
+        <>
+            {isMobileView &&
+                <div className={`${styles.callnavbar} bottom-0 shadow w-full z-50 mt-20 fixed py-3 `}>
+                    <div className="mx-2 text-center" >
+                        <div className="flex items-center justify-center space-x-4 cursor-pointer" onClick={handleClick}>
+                            <div className={styles.calltext}>
+                                <p className="text-lg">Call Now</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            }
         </>
     );
 };

@@ -7,23 +7,22 @@ import Image from 'next/image';
 const HomeCard = () => {
   return (
     <div className="container">
-      <h3 className="title-font sm:text-3xl text-2xl font-bold mb-6 mt-4 text-center">Services We Offer</h3>
+      <h3 className="title-font sm:text-3xl text-2xl font-bold mb-8 mt-4 text-center">Services We Offer</h3>
         <div className="lg:grid lg:grid-cols-4 md:grid md:grid-cols-4 sm:grid sm:grid-cols-1 gap-2">
 
           <div className={`md:flex md:col-span-1 mx-2 mt-3 px-4 py-2 text-center rounded-xl shadow-lg border border-third-500 hover:bg-third-500 hover:text-white dark:hover:border-third-500 mb-2 ${styles.homeCard}`}>
-            <Link href="" className="card-inner block p-6 ">
+            <Link href="/services#mri-service-card" className="card-inner block p-6 ">
               <div className="flex items-center justify-center">
                 <Image src="/Image/mri.png" width={200} height={70} alt='MRI' />
               </div>
               <h5 className="mb-2 text-xl md:text-2xl font-bold tracking-tight text-secondary-500k text-center">MRI</h5>
-             
             </Link>
           </div>
 
           <div className={`md:flex md:col-span-1 mx-2 mt-3 px-4 py-3 text-center rounded-xl shadow-lg border border-third-500 hover:bg-third-500 hover:text-white dark:hover:border-third-500 mb-2 ${styles.homeCard}`}>
-            <Link href="" className="card-inner block p-6 ">
+            <Link href="/services#32-slice-ct-scan" className="card-inner block p-6 ">
               <div className="flex items-center justify-center">
-                <Image src="/Image/ct.png" width={200} height={70} alt='MRI' />
+                <Image src="/Image/ct.png" width={200} height={70} alt='slice ct scan' />
               </div>    
             
               <h5 className="mb-2 text-xl md:text-2xl font-bold tracking-tight text-secondary-500k">32 Slice CT Scan</h5>
@@ -31,9 +30,9 @@ const HomeCard = () => {
             </Link>
           </div>
           <div className={`md:flex md:col-span-1 mx-2 mt-3 px-4 py-3 text-center rounded-xl shadow-lg border border-third-500 hover:bg-third-500 hover:text-white dark:hover:border-third-500 mb-2 ${styles.homeCard}`}>
-            <Link href="" className="card-inner block p-6 ">
+            <Link href="/services#ct-guided-interventional" className="card-inner block p-6 ">
               <div className="flex items-center justify-center">
-                <Image src="/Image/ctguided.png" width={200} height={70} alt='MRI' />
+                <Image src="/Image/ctguided.png" width={200} height={70} alt='ct guide' />
               </div>    
             
               <h5 className="mb-2 text-xl md:text-2xl font-bold tracking-tight text-secondary-500k">CT Guided Interventional</h5>
@@ -42,9 +41,9 @@ const HomeCard = () => {
           </div>
 
           <div className={`md:flex md:col-span-1 mx-2 mt-3 px-4 py-3 text-center rounded-xl shadow-lg border border-third-500 hover:bg-third-500 hover:text-white dark:hover:border-third-500 mb-2 ${styles.homeCard}`}>
-            <Link href="" className="card-inner block p-6 ">
+            <Link href="/services#pathology-lab" className="card-inner block p-6 ">
               <div className="flex items-center justify-center">
-                <Image src="/Image/pathology.png" width={200} height={70} alt='MRI' />
+                <Image src="/Image/pathology.png" width={200} height={70} alt='pathology' />
               </div>    
             
               <h5 className="mb-2 text-xl md:text-2xl font-bold tracking-tight text-secondary-500k">Pathology Lab(Blood Test)</h5>
@@ -52,9 +51,9 @@ const HomeCard = () => {
             </Link>
           </div>
           <div className={`md:flex md:col-span-1 mx-2 mt-3 px-4 py-3 text-center rounded-xl shadow-lg border border-third-500 hover:bg-third-500 hover:text-white dark:hover:border-third-500 mb-2 ${styles.homeCard}`}>
-            <Link href="" className="card-inner block p-6 ">
+            <Link href="/services#usg-color-doppler" className="card-inner block p-6 ">
               <div className="flex items-center justify-center">
-                <Image src="/Image/usg.png" width={200} height={70} alt='MRI' />
+                <Image src="/Image/usg.png" width={200} height={70} alt='usg' />
               </div>    
             
               <h5 className="mb-2 text-xl md:text-2xl font-bold tracking-tight text-secondary-500k">USG & color Doppler</h5>
@@ -62,9 +61,9 @@ const HomeCard = () => {
             </Link>
           </div>
           <div className={`md:flex md:col-span-1 mx-2 mt-3 px-4 py-3 text-center rounded-xl shadow-lg border border-third-500 hover:bg-third-500 hover:text-white dark:hover:border-third-500 mb-2 ${styles.homeCard}`}>
-            <Link href="" className="card-inner block p-6 ">
+            <Link href="/services#x-ray" className="card-inner block p-6 ">
               <div className="flex items-center justify-center">
-                <Image src="/Image/xray.png" width={200} height={70} alt='MRI' />
+                <Image src="/Image/xray.png" width={200} height={70} alt='x-ray' />
               </div>    
             
               <h5 className="mb-2 text-xl md:text-2xl font-bold tracking-tight text-secondary-500k">X-ray & X-Ray Procudeures</h5>
@@ -72,9 +71,9 @@ const HomeCard = () => {
             </Link>
           </div>
           <div className={`md:flex md:col-span-1 mx-2 mt-3 px-4 py-3 text-center rounded-xl shadow-lg border border-third-500 hover:bg-third-500 hover:text-white dark:hover:border-third-500 mb-2 ${styles.homeCard}`}>
-            <Link href="" className="card-inner block p-6 ">
+            <Link href="/services#ecg-stress-test" className="card-inner block p-6 ">
               <div className="flex items-center justify-center">
-                <Image src="/Image/ecg.png" width={200} height={70} alt='MRI' />
+                <Image src="/Image/ecg.png" width={200} height={70} alt='ecg' />
               </div>    
             
               <h5 className="mb-2 text-xl md:text-2xl font-bold tracking-tight text-secondary-500k">ECG & Stress Test</h5>
@@ -82,9 +81,9 @@ const HomeCard = () => {
             </Link>
           </div>
           <div className={`md:flex md:col-span-1 mx-2 mt-3 px-4 py-3 text-center rounded-xl shadow-lg border border-third-500 hover:bg-third-500 hover:text-white dark:hover:border-third-500 mb-2 ${styles.homeCard}`}>
-            <Link href="" className="card-inner block p-6 ">
+            <Link href="/services#2d-echo" className="card-inner block p-6 ">
               <div className="flex items-center justify-center">
-                <Image src="/Image/2decho.png" width={200} height={70} alt='MRI' />
+                <Image src="/Image/2decho.png" width={200} height={70} alt='2decho' />
               </div>    
             
               <h5 className="mb-2 text-xl md:text-2xl font-bold tracking-tight text-secondary-500k">2D Echo</h5>

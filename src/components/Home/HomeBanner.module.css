@@ -1,6 +1,6 @@
 
 .curvedDiv {
-  background-color: #3498db; /* Your desired background color */
+  background-image: url('/Image/bg-image.webp'); /* Your desired background color */
   height: 300px; /* Adjust the height as needed */
   border-radius: 0 0 50% 50%; /* Curved bottom */
   width: 100%; /* Adjust width as needed */
@@ -9,4 +9,16 @@
 .responsiveImg {
     max-width: 100%;
     height: auto;
+  }
+
+  @keyframes waveColor {
+    0% { color: #f72585; }
+    25% { color: #7209b7; }
+    50% { color: #3a0ca3; }
+    75% { color: #4361ee; }
+    100% { color: #4cc9f0; }
+  }
+  
+  .wave-animation{
+    animation: waveColor 3s ease-in-out infinite;
   }

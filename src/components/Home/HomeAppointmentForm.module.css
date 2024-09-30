@@ -1,0 +1,29 @@
+
+  
+  .formHeader {
+    background-color: #0b3a6a; /* Purple color for the header */
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-size: 1.5rem;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    position: relative;
+  }
+  
+  .formHeader::before {
+    content: '';
+    position: absolute;
+    bottom: -15px;
+    left: 0;
+    right: 0;
+    height: 30px;
+    background-color: white;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+  }
+  
+  .form {
+    padding: 20px;
+  }
+  

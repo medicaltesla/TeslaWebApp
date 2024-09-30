@@ -1,8 +1,9 @@
 "use client";
-import React, { FC,useState } from "react";
+import React, { FC,useState, useRef  } from "react";
 import styles from "./BlogBody.module.css";
 
 interface CardProps {
+    id?: string;
     ServiceTitle: string;
     showDetails?: string;
     hideDetails?: string;
@@ -12,17 +13,27 @@ const hideDetailsStyle = {
     fontSize: '16px',
 }
 
-const ServicesCard: FC<CardProps> = ({ ServiceTitle, showDetails, hideDetails }) => {
+const ServicesCard: FC<CardProps> = ({ id,ServiceTitle, showDetails, hideDetails }) => {
   // State to manage the toggle
   const [isExpanded, setIsExpanded] = useState(false);
+
+  const cardRef = useRef<HTMLDivElement>(null);
 
   // Toggle function to expand/collapse the content
   const toggleExpand = () => {
     setIsExpanded(!isExpanded);
+
+    if (cardRef.current) {
+      cardRef.current.scrollIntoView({
+        behavior: "smooth",
+        block: "start", // Aligns the element to the top of the viewport
+        inline: "nearest"
+      });
+    }
   };
 
   return (
-    <div className="container mx-auto md:my-2 mt-10">
+    <div id={id} ref={cardRef} className="container mx-auto md:my-2 mt-10">
       <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-1 mt-4">
         <div className="md:col-span-1 px-3 py-3 text-center">
           <div className={`${styles.card} h-full relative group`}>

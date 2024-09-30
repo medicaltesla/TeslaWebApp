@@ -29,7 +29,8 @@ const page = () => {
             </div>
         </div>
     
-        <ServicesCard
+        <ServicesCard 
+            id="mri-service-card"
             ServiceTitle="MRI"
             showDetails="MRI, or 3 Tesla Magnetic Resonance Imaging, is an advanced imaging technology that uses a powerful 3 Tesla magnetic field to produce highly detailed images of the body's internal structures. This high magnetic field strength results in clearer and more precise images compared to lower-strength MRI systems, making 3T MRI an essential tool in modern diagnostics."
             hideDetails="
@@ -50,6 +51,7 @@ const page = () => {
         />
 
         <ServicesCard
+            id="32-slice-ct-scan"
             ServiceTitle="32 Slice CT Scan"
             showDetails="A 32-Slice CT (Computed Tomography) scan, offered by Tesla Hi-Tech 3T MRI Amazing & Diagnostic Centre in Pune, uses advanced imaging technology to create detailed cross-sectional images of the body. The '32-slice' refers to the scanner's ability to capture 32 slices of images simultaneously, resulting in high-resolution, precise images. This capability is essential for diagnosing a variety of medical conditions, including cardiovascular diseases, cancers, trauma injuries, and neurological disorders."
             hideDetails="
@@ -65,6 +67,7 @@ const page = () => {
         />
 
         <ServicesCard
+            id="ct-guided-interventional"
             ServiceTitle="CT Guided Interventional"
             showDetails="CT-guided interventional procedures use advanced imaging technology to precisely guide minimally invasive treatments. This technique leverages the clarity and accuracy of computed tomography (CT) imaging to perform procedures such as biopsies, drain placements, and ablations with pinpoint accuracy, enhancing treatment outcomes and patient safety."
             hideDetails="
@@ -82,6 +85,7 @@ const page = () => {
 
 
         <ServicesCard
+            id="pathology-lab"
             ServiceTitle="Pathology Lab(Blood Test)"
             showDetails="Our pathology lab offers a comprehensive range of blood tests designed to provide accurate and timely diagnostic information. These tests are essential for detecting various health conditions, monitoring chronic diseases, and guiding treatment plans. With state-of-the-art equipment and highly skilled technicians, we ensure precise and reliable results for all our patients."
             hideDetails="
@@ -101,6 +105,7 @@ const page = () => {
         />
 
         <ServicesCard
+            id="usg-color-doppler"
             ServiceTitle="USG & color Doppler"
             showDetails="USG (Ultrasound Sonography) & Color Doppler is a non-invasive imaging technology that uses high-frequency sound waves to create images of the body's internal structures. The Color Doppler adds functionality by measuring and visualizing blood flow within vessels, providing both anatomical and functional information."
             hideDetails=" 
@@ -117,6 +122,7 @@ const page = () => {
         />
 
         <ServicesCard
+            id="x-ray"
             ServiceTitle="X-ray & X-Ray Procudeures"
             showDetails="X-Ray is a widely used imaging technique that utilizes electromagnetic radiation to produce images of the inside of the body. It is particularly effective for visualizing bones, detecting fractures, and identifying infections, tumors, and other conditions. X-Ray procedures are quick, non-invasive, and essential tools in medical diagnostics."
             hideDetails="
@@ -133,6 +139,7 @@ const page = () => {
         />
 
         <ServicesCard
+            
             ServiceTitle="ECG & Stress Test"
             showDetails="Electrocardiography (ECG) and Stress Tests are essential diagnostic tools used to assess heart health and function. An ECG measures the electrical activity of the heart, providing valuable information about heart rhythm and identifying potential issues. A Stress Test, often performed on a treadmill or stationary bike, monitors the heart’s response to physical exertion, helping to detect conditions that might not be evident at rest."
             hideDetails="
@@ -148,9 +155,11 @@ const page = () => {
                 <p>Preventive Care: Regular testing can help in the prevention of serious heart conditions by identifying risk factors early.</p>
                 <p>Monitoring: Useful for ongoing monitoring of known heart conditions, ensuring effective management.</p>
             "
+            id="ecg-stress-test"
         />
 
         <ServicesCard
+            id="2d-echo"
             ServiceTitle="2D Echo"
             showDetails="2D Echocardiography (2D Echo) is a non-invasive imaging technique used to visualize the heart's structure and function in real-time. It uses ultrasound waves to create detailed images of the heart's chambers, valves, walls, and blood vessels. This test is crucial for diagnosing and monitoring various heart conditions."
             hideDetails="

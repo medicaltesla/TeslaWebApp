@@ -24,7 +24,7 @@ const Form = () => {
 
                     <a href="" className="flex items-center mb-6">
                         <LuMail size={22} className="text-third-500"/>
-                        <h5 className="text-black text-base font-normal leading-6 ml-5">test@gmail.com</h5>
+                        <h5 className="text-black text-base font-normal leading-6 ml-5">teslahitechimaging@gmail.com</h5>
                     </a>
                     <a href="" className="flex items-center">
                         <LuMapPin size={22} className="text-third-500"/>

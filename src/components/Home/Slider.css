@@ -1,0 +1,6 @@
+
+.responsiveImg {
+    position: relative;
+    top: 3rem;
+    transition: opacity 1s ease-in-out; /* Smooth transition */
+}

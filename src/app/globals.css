@@ -5,6 +5,11 @@
 body {
   font-family: 'Kanit', sans-serif;
 }
+
+body.no-scroll {
+  overflow: hidden;
+}
+
 /* width */
 ::-webkit-scrollbar {
     width: 6px;

@@ -1,7 +1,7 @@
 
 .card{
     width: auto; /* Set the desired width for your card */
-  /* Set the desired height for your card */
+    height: auto; 
     overflow: hidden;
     border-radius:20px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -36,5 +36,5 @@
     text-overflow: ellipsis;
     display: -webkit-box;
     -webkit-line-clamp: 3; /* Adjust this value to limit the number of lines */
-    -webkit-box-orient: horizontal;
+    -webkit-box-orient: vertical;
 }

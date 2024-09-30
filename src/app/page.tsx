@@ -11,8 +11,9 @@ const WhyChooseTesla = lazy(() => import('@/components/Home/WhyChooseTesla'));
 const FAQ_Prop = lazy(() => import('../components/FAQ/FAQ_Prop'));
 const FAQ_Heading = lazy(() => import('../components/FAQ/FAQ_Heading'));
 const TestimonialCards = lazy(() => import('../components/Home/TestimonialCards'));
-const AppointmentForm = lazy(() => import('../components/Contact/AppointmentForm'));
+const HomeAppointmentForm = lazy(() => import('../components/Home/HomeAppointmentForm'));
 import styles from "../components/Home/WelcomeText.module.css"
+const Slider = lazy(() => import('../components/Home/Slider'));
 
 const card = {
     width: '100%', 
@@ -56,13 +57,15 @@ const Home: React.FC = () => {
                         description="Tesla Hi-Tech 3T MRI Amazing &amp; Diagnostic Center"
                         keywords="Tesla Hi-Tech 3T MRI Amazing &amp; Diagnostic Center"
                     />
-
+           
                     <HomeBanner
-                        title="Radiology Clinic | Your Local Imaging Specialist Comprehensive and Timely Reports"
-                        FormComponent={<AppointmentForm/>}
+                        title='Radiology Clinic | Your Local Imaging Specialist Comprehensive and Timely Reports'
+                        FormComponent={<HomeAppointmentForm/>}
                     />
 
-                    <div className="flex flex-wrap justify-center px-4 ">
+                    <WelcomeText />
+                   
+                    <div className="flex flex-wrap justify-center px-4 mt-4 mb-4">
                         <div className={styles.welcomeButton}>
                             <button type="button" className="focus:outline-none text-secondary-500 border-2 border-secondary-500 hover:border-secondary-500 focus:ring-4 focus:ring-secondary-500 font-bold rounded-lg text-lg md:text-xl w-18 h-14 px-5 py-2.5 me-2 mb-2  bg-white hover:bg-secondary-500 hover:text-white ">Assured Safety</button>
                         </div>
@@ -75,16 +78,9 @@ const Home: React.FC = () => {
                         <div className={styles.welcomeButton}>
                             <button type="button" className="focus:outline-none text-secondary-500 border-2 border-secondary-500 hover:border-secondary-500 focus:ring-4 focus:ring-secondary-500 font-bold rounded-lg text-lg md:text-xl w-18 h-14 px-5 py-2.5 me-2 mb-2  bg-white hover:bg-secondary-500 hover:text-white ">Affordable</button>
                         </div>
-                    
                     </div>
 
-
-                    <WelcomeText />
-                   
                     <HomeCard/>
-                    <div className="md:my-2 lg:grid lg:grid-cols-1 md:grid md:grid-cols-1 sm:grid sm:grid-cols-1 w-full justify-items-center items-center">
-                        <Image style={card} src='/Image/Home/process.png' width={600} height={400} alt="process"/>
-                    </div>
 
                     <WhyChooseTesla/>
                     <TestimonialCards/>

@@ -1,0 +1,18 @@
+
+
+.calltext {
+    font-weight: 400;
+    color: #ffffff;
+}
+.callnavbar {
+    background-color: #8A241F; /* Adjust to green-300 */
+    border-radius: 20px 20px 0 0;
+    padding: 10px; 
+}
+
+/* Hide on screens smaller than 991px */
+/* @media (max-width: 991px) {
+    .callnavbar {
+        display: none;
+    }
+} */

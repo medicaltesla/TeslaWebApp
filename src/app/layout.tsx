@@ -6,6 +6,8 @@ import Footer from "@/components/Footer/Footer"
 import Loader from "@/components/Loader/Loader";
 import CallNavbar from '@/components/Navbar/CallNavbar';
 import { Kanit } from 'next/font/google';
+import WelcomeMessage from '@/components/Navbar/WelcomeMessage';
+import PopUpForm from '@/components/Home/PopUpForm';
 
 const inter = Kanit({ subsets: ['latin'], weight: ['400', '700'] });
 
@@ -44,7 +46,7 @@ export default function RootLayout({children,}: Readonly<{children: React.ReactN
     <html lang="en">
       <body className={inter.className}>
         <Navbar />
-        <CallNavbar />
+        <PopUpForm /> 
           {children}
         <Footer/>  
       </body>

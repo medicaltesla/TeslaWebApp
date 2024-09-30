@@ -9,7 +9,8 @@ import { FaPhoneSquareAlt } from "react-icons/fa";
 import { BsInfoCircleFill } from "react-icons/bs";
 import { MdMenuOpen } from "react-icons/md";
 import { TbArrowsCross } from "react-icons/tb";
-import CallNavbar from "./CallNavbar";
+
+const PhoneNumber = '+91 91750 14994';
 
 export default function Navbar() {
   const [isDrawerOpen, setDrawerOpen] = useState(false);
@@ -23,14 +24,18 @@ export default function Navbar() {
 
   const [subsubmenuVisible, setSubsubmenuVisible] = useState(null);
 
+  const handleClick = () => {
+    window.location.href = `tel:${PhoneNumber}`;
+  };
+
   return (
     <>
      
-      <nav className="flex bg-primary-500 shadow w-full z-50 mb-8 fixed mx-auto  justify-between items-center">
+      <nav className="flex bg-primary-500 shadow w-full z-50 mb-8 fixed mx-auto justify-between items-center p-2">
           <div className=" mx-2 ">
             <Link href="/">
               <div className={styles.imageContainer}>
-                <Image src="/Image/logo1.png" loading='lazy' className={styles.logo} width={200} height={120} alt="Tesla Logo" />
+                <Image src="/Image/logo1.png" loading='lazy' className={styles.logo} width={200} height={140} alt="Tesla Logo" />
               </div>
             </Link>
           </div>
@@ -67,13 +72,17 @@ export default function Navbar() {
               </Link>
             </div>   
 
-            <div className="relative group p-1 ">
+            <div className="relative group text-white hover:text-third-500 p-1 uppercase">
               <Link href="/contact" className={styles.link}>
-                <button className="text-white border border-white bg-transparent hover:bg-third-500 hover:text-white font-medium rounded-full text-sm px-4 py-3 text-center uppercase">
-                  Book Appointment
-                </button>
+                Book Appointment
               </Link>
             </div>  
+            
+            <div className="relative group text-white hover:text-third-500 p-1 uppercase">
+              <Link href="" onClick={handleClick} className={styles.link}> 
+                Call  {PhoneNumber}
+              </Link>
+            </div> 
 
           </div>
         
@@ -125,14 +134,13 @@ export default function Navbar() {
                 </ul>
 
                 <ul>
-                  <li className="fixed bottom-20">
+                  <li className="fixed bottom-20 text-white">
                     <span className="text-sm sm:text-center">© 2024 <a href="/" className="hover:underline"></a>
-                      <a href='https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=test@gmail.com' rel='noopener noreferrer' className='text-secondary-500 ml-1' target='_blank'>test@gmail.com</a>
+                      <a href='https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=teslahitechimaging@gmail.com' rel='noopener noreferrer' className=' ml-1' target='_blank'>teslahitechimaging@gmail.com</a>
                     </span>
                   </li>
                 </ul>
                 
-
             </div>
           </div>
         )}

@@ -6,7 +6,7 @@ import Link from 'next/link';
 const Counter: React.FC = () => {
     const [doctorCount, setDoctorCount] = useState<number>(0);
     const [staffCount, setStaffCount] = useState<number>(0);
-    const [customerCount, setCustomerCount] = useState<number>(0);
+    const [customerCount, setCustomerCount] = useState<number>(2360);
     const [extraCount, setExtraCount] = useState<number>(0);
 
     const maxDoctorCount: number = 3;
@@ -28,7 +28,7 @@ const Counter: React.FC = () => {
     return (
         <div className="bg-transparent mt-2 mb-2 ftco-section justify-content-center">
             <div className="container">
-                <h3 className="title-font text-3xl font-bold mb-6 mt-4 text-center">Why Us</h3>
+                <h3 className="title-font text-3xl font-bold mb-6 mt-4 text-center">Why Choose Us</h3>
                 <div className="md:my-2 lg:grid lg:grid-cols-4 md:grid md:grid-cols-4 sm:grid sm:grid-cols-1 justify-items-center items-center">
                     <div className="md:col-span-1 px-4 text-center">
                         <div className="btn-box">
