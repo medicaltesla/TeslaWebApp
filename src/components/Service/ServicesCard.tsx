@@ -39,7 +39,7 @@ const ServicesCard: FC<CardProps> = ({ id,ServiceTitle, showDetails, hideDetails
           <div className={`${styles.card} h-full relative group`}>
             <div className={styles.cardInner}>
               <div className={styles.cardContent}>
-                <h4 className="title-font text-3xl font-medium mb-3 relative group">{ServiceTitle}
+                <h4 className="title-font text-2xl md:text-3xl font-medium mb-3 relative group">{ServiceTitle}
                     <span className="absolute left-0 bottom-0 w-full h-1 bg-secondary-500 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></span>
                 </h4>
                 {/* Initial brief description */}

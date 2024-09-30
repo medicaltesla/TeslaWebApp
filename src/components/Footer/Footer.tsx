@@ -14,7 +14,7 @@ const Footer = () => {
                 
                 <div className="md:my-2 lg:grid lg:grid-col-1 md:grid md:grid-cols-1 sm:grid sm:grid-cols-1 gap-1 md:mx-4">
                     <div className="md:col-span-4 sm:col-span-1 px-2 py-4">
-                        <h4 className="mb-4 text-2xl font-bold text-start mt-4 text-white">Tesla Hi-Tech MRI Imaging Diagnostic Center</h4>
+                        <h4 className="mb-4 text-xl md:text-3xl font-bold text-start mt-4 text-white">Tesla Hi-Tech MRI Imaging Diagnostic Center</h4>
                         <p className="text-white text-base">
                             Mumbai and Pune&apos;s most trusted destination for state-of-the-art diagnostic imaging services. Nestled in the heart of the city, our clinic is dedicated to delivering unparalleled accuracy and comprehensive care.
                         </p>

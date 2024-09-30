@@ -22,7 +22,7 @@ const page = () => {
             />
             <div className="absolute inset-0 flex items-center justify-center">
                 <div className="bg-transparent bg-opacity-50 p-4 rounded-lg"> {/* Background with opacity */}
-                    <h1 className="text-white text-3xl mt-24 font-bold">
+                    <h1 className="text-white text-xl md:text-3xl mt-24 font-bold">
                         Our Service
                     </h1>
                 </div>

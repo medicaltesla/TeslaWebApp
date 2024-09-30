@@ -28,13 +28,13 @@ const Counter: React.FC = () => {
     return (
         <div className="bg-transparent mt-2 mb-2 ftco-section justify-content-center">
             <div className="container">
-                <h3 className="title-font text-3xl font-bold mb-6 mt-4 text-center">Why Choose Us</h3>
+                <h3 className="title-font text-xl md:text-3xl font-bold mb-6 mt-4 text-center">Why Choose Us</h3>
                 <div className="md:my-2 lg:grid lg:grid-cols-4 md:grid md:grid-cols-4 sm:grid sm:grid-cols-1 justify-items-center items-center">
                     <div className="md:col-span-1 px-4 text-center">
                         <div className="btn-box">
                             <Link href="" className="btn1" style={{ cursor: 'default', pointerEvents: 'none' }}>
-                                <h3 className='number text-2xl md:text-4xl'>Our Doctors</h3>
-                                <span className='number text-2xl md:text-4xl'>{doctorCount}+</span>
+                                <h3 className='number text-xl md:text-3xl'>Our Doctors</h3>
+                                <span className='number text-2xl md:text-3xl'>{doctorCount}+</span>
                             </Link>
                         </div>
                     </div>
@@ -42,8 +42,8 @@ const Counter: React.FC = () => {
                     <div className="md:col-span-1 px-4 text-center">
                         <div className="btn-box">
                             <Link href="" className="btn1" style={{ cursor: 'default', pointerEvents: 'none' }}>
-                                <h3 className='number text-2xl md:text-4xl'>Our Staff</h3>
-                                <span className='number text-2xl md:text-4xl'>{staffCount}+</span>
+                                <h3 className='number text-xl md:text-3xl'>Our Staff</h3>
+                                <span className='number text-xl md:text-3xl'>{staffCount}+</span>
                             </Link>
                         </div>
                     </div>
@@ -51,8 +51,8 @@ const Counter: React.FC = () => {
                     <div className="md:col-span-1 px-4 text-center">
                         <div className="btn-box">
                             <Link href="" className="btn1" style={{ cursor: 'default', pointerEvents: 'none' }}>
-                                <h3 className='number text-2xl md:text-4xl'>Reports</h3>
-                                <span className='number text-2xl md:text-4xl'>{customerCount}+</span>
+                                <h3 className='number text-xl md:text-3xl'>Reports</h3>
+                                <span className='number text-xl md:text-3xl'>{customerCount}+</span>
                             </Link>
                         </div>
                     </div>
@@ -60,8 +60,8 @@ const Counter: React.FC = () => {
                     <div className="md:col-span-1 px-4 text-center">
                         <div className="btn-box">
                             <Link href="" className="btn1" style={{ cursor: 'default', pointerEvents: 'none' }}>
-                                <h3 className='number text-2xl md:text-4xl'>Services</h3>
-                                <span className='number text-2xl md:text-4xl'>{extraCount}+</span>
+                                <h3 className='number text-xl md:text-3xl'>Services</h3>
+                                <span className='number text-xl md:text-3xl'>{extraCount}+</span>
                             </Link>
                         </div>
                     </div>

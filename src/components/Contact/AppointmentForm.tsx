@@ -29,16 +29,16 @@ const AppointmentForm = () => {
     return (
         <>
             <div className="p-5 lg:p-11 lg:rounded-r-2xl rounded-2xl mt-4">
-                <h2 className="text-third-500 text-center text-4xl font-semibold leading-10 mb-11">Book Your Appointment</h2>
+                <h2 className="text-third-500 text-center text-xl md:text-3xl font-semibold leading-10 mb-11">Book Your Appointment</h2>
                 <form onSubmit={handleSubmit}>
-                    <input type="text" name="Name" className="w-full h-12 text-gray-600 placeholder-gray-400  shadow-sm bg-transparent text-lg font-normal leading-7 rounded-full border border-gray-300 focus:outline-none pl-4 mb-10" placeholder="Name*" required/>
+                    <input type="text" name="Name" className="w-full h-12 text-gray-600 placeholder-gray-400  shadow-sm bg-transparent text-sm md:text-lg font-normal leading-7 rounded-full border border-gray-300 focus:outline-none pl-4 mb-10" placeholder="Name*" required/>
                     
-                    <input type="text" name="Phone" className="w-full h-12 text-gray-600 placeholder-gray-400  shadow-sm bg-transparent text-lg font-normal leading-7 rounded-full border border-gray-300 focus:outline-none pl-4 mb-10" placeholder="Phone Number*" required/>
+                    <input type="text" name="Phone" className="w-full h-12 text-gray-600 placeholder-gray-400  shadow-sm bg-transparent text-sm md:text-lg font-normal leading-7 rounded-full border border-gray-300 focus:outline-none pl-4 mb-10" placeholder="Phone Number*" required/>
                     
                     <div className="flex flex-col lg:flex-row lg:space-x-4 mb-10">
                         <select
                             name="Location"
-                            className="w-full lg:w-50% h-12 text-gray-600 bg-transparent text-lg font-normal leading-7 rounded-full border border-gray-300 focus:outline-none pl-4"
+                            className="w-full lg:w-50% h-12 text-gray-600 bg-transparent text-sm md:text-lg font-normal leading-7 rounded-full border border-gray-300 focus:outline-none pl-4"
                             required
                         >
                             <option value="">Select City*</option>
@@ -50,7 +50,7 @@ const AppointmentForm = () => {
                     <div className="flex flex-col lg:flex-row lg:space-x-4 mb-10">
                         <select
                             name="Test"
-                            className="w-full lg:w-50% h-12 text-gray-600 bg-transparent text-lg font-normal leading-7 rounded-full border border-gray-300 focus:outline-none pl-4"
+                            className="w-full lg:w-50% h-12 text-gray-600 bg-transparent text-sm md:text-lg font-normal leading-7 rounded-full border border-gray-300 focus:outline-none pl-4"
                             required
                         >
                             <option value="">Select Test*</option>
@@ -65,7 +65,7 @@ const AppointmentForm = () => {
                         </select>
                     </div>
                     {/* <input type="text" name="Email" className="w-full h-12 text-gray-600 placeholder-gray-400 shadow-sm bg-transparent text-lg font-normal leading-7 rounded-full border border-gray-200 focus:outline-none pl-4 mb-10" placeholder="Email"/> */}
-                    <button className="w-full h-12 text-white text-base font-semibold leading-6 rounded-full transition-all duration-700 hover:bg-third-600 bg-third-500 shadow-sm">Book Your Appointment</button>
+                    <button className="w-full h-12 text-white text-sm md:text-base font-semibold leading-6 rounded-full transition-all duration-700 hover:bg-third-600 bg-third-500 shadow-sm">Book Your Appointment</button>
                 </form>
             </div>
         </>
