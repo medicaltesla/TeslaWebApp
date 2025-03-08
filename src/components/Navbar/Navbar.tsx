@@ -8,7 +8,7 @@ import { MdMedicalServices } from "react-icons/md";
 import { FaPhoneSquareAlt } from "react-icons/fa";
 import { BsInfoCircleFill } from "react-icons/bs";
 import { MdMenuOpen } from "react-icons/md";
-import { TbArrowsCross } from "react-icons/tb";
+import { IoCloseSharp } from "react-icons/io5";
 
 const PhoneNumber = '+91 91750 14994';
 
@@ -32,13 +32,13 @@ export default function Navbar() {
     <>
      
       <nav className="flex bg-primary-500 shadow w-full z-50 mb-8 fixed mx-auto justify-between items-center p-2">
-          <div className=" mx-2 ">
-            <Link href="/">
-              <div className={styles.imageContainer}>
-                <Image src="/Image/logo1.png" loading='lazy' className={styles.logo} width={200} height={140} alt="Tesla Logo" />
-              </div>
-            </Link>
-          </div>
+        <div className="flex-shrink-0">
+          <Link href="/">
+            <div className={styles.imageContainer}>
+              <Image src="/Image/logo1.png" loading="lazy" className={styles.logo} width={200} height={140} alt="Tesla Logo" />
+            </div>
+          </Link>
+        </div>
           
           <div className="right-0">
             <button type="button" onClick={handleDrawerToggle} className="p-2 group lg:hidden" data-drawer-target="drawer-navigation" data-drawer-show="drawer-navigation" aria-controls="drawer-navigation">
@@ -89,7 +89,7 @@ export default function Navbar() {
         {isDrawerOpen && (
           <div id="drawer-navigation" className="fixed top-0 right-0 z-40 w-64 h-screen p-4 bg-primary-500 md:hidden" tab-index="-1" aria-labelledby="drawer-navigation-label">
               <button className="absolute top-6 right-4 text-white" onClick={closeDrawer}>
-                <TbArrowsCross size={16}/>
+                <IoCloseSharp size={16}/>
               </button>
 
               <div className="py-4 overflow-y-auto">

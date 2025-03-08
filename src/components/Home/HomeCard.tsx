@@ -15,7 +15,7 @@ const HomeCard = () => {
               <div className="flex items-center justify-center">
                 <Image src="/Image/mri.png" width={200} height={70} alt='MRI' />
               </div>
-              <h5 className="mb-2 text-xl md:text-2xl font-bold tracking-tight text-secondary-500k text-center">MRI</h5>
+              <h5 className="mb-2 text-xl md:text-2xl font-bold tracking-tight text-secondary-500k text-center">3T MRI</h5>
             </Link>
           </div>
 
@@ -35,7 +35,7 @@ const HomeCard = () => {
                 <Image src="/Image/ctguided.png" width={200} height={70} alt='ct guide' />
               </div>    
             
-              <h5 className="mb-2 text-xl md:text-2xl font-bold tracking-tight text-secondary-500k">CT Guided Interventional</h5>
+              <h5 className="mb-2 text-xl md:text-2xl font-bold tracking-tight text-secondary-500k">CT Guided Interventional Procudeures</h5>
               
             </Link>
           </div>
