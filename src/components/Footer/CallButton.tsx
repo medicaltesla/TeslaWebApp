@@ -4,7 +4,7 @@ import { FaPhoneVolume } from "react-icons/fa6";
 import styles from "./footer.module.css"
 
 
-const PhoneNumber = '+91 9175014994'; // Replace with your phone number
+const PhoneNumber = '+91 9175054994'; // Replace with your phone number
 
 const CallButton = () => {
 
