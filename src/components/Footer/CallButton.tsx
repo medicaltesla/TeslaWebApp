@@ -35,7 +35,7 @@ const CallButton = () => {
     return (
         <>
             {isMobileView &&
-                <div className={`${styles.callnavbar} bottom-0 shadow w-full z-50 mt-20 fixed py-3 `}>
+                <div className={`${styles.callnavbar} bottom-0 w-full z-50 mt-20 fixed py-3 shadow-lg border-t-2 border-l-2 border-r-2 border-white`}>
                     <div className="mx-2 text-center" >
                         <div className="flex items-center justify-center space-x-4 cursor-pointer" onClick={handleClick}>
                             <div className={styles.calltext}>
